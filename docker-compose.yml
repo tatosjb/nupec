@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:10.4-alpine
+  web:
+    build: .
+    command: sh -c 'bundle && puma'
+    environment: 
+      - DEVISE_SECRET_KEY=0f36d949e8e439027b4e0c9ec4063fb11a3c89e644a6af5258509d5bd5b42b4bece80bbbe265cdbef4b6acce4d9a841de9ca7ac675d3fd7e5f5d60a518464b1a
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
