@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'mini_racer', platforms: :ruby
 
 gem 'devise'
+gem 'webpacker', '~> 3.5'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
