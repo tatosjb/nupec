@@ -1,6 +1,4 @@
-<%= stylesheet_pack_tag 'devise/sessions' %>
-
-<div class="login text-center container-fluid">
+<div class="text-center container-fluid container-signin">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {class: 'form-signin'}) do |f| %>
     <%= image_tag 'bootstrap-solid.svg', alt: 72, height: 72, class: 'mb-4' %>
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
